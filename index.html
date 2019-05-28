@@ -84,12 +84,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>双指针<br>一个left一个right遍历即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -&gt; ListNode:</span><br><span class="line">        p = l1</span><br><span class="line">        q = l2</span><br><span class="line">        carry = 0</span><br><span class="line">        res = ListNode(0)</span><br><span class="line">        t = res</span><br><span class="line">        while p != None or q != None:</span><br><span class="line">            n1 = 0</span><br><span class="line">            n2 = 0</span><br><span class="line">            if p != None:</span><br><span class="line">                n1 = p.val</span><br><span class="line">            if q != None:</span><br><span class="line">                n2 = q.val</span><br><span class="line">            t.next = ListNode(n1 + n2 + carry)</span><br><span class="line">            t = t.next</span><br><span class="line">            carry = t.val//10</span><br><span class="line">            t.val = (t.val)%10</span><br><span class="line">            if p != None:</span><br><span class="line">                p = p.next</span><br><span class="line">            if q != None: </span><br><span class="line">                q = q.next</span><br><span class="line">        if carry&gt;0:</span><br><span class="line">            t.next =  ListNode(carry)</span><br><span class="line">        return res.next</span><br></pre></td></tr></table></figure></p>
+        <p>链表题<br>注意进位<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -&gt; ListNode:</span><br><span class="line">        p = l1</span><br><span class="line">        q = l2</span><br><span class="line">        carry = 0</span><br><span class="line">        res = ListNode(0)</span><br><span class="line">        t = res</span><br><span class="line">        while p != None or q != None:</span><br><span class="line">            n1 = 0</span><br><span class="line">            n2 = 0</span><br><span class="line">            if p != None:</span><br><span class="line">                n1 = p.val</span><br><span class="line">            if q != None:</span><br><span class="line">                n2 = q.val</span><br><span class="line">            t.next = ListNode(n1 + n2 + carry)</span><br><span class="line">            t = t.next</span><br><span class="line">            carry = t.val//10</span><br><span class="line">            t.val = (t.val)%10</span><br><span class="line">            if p != None:</span><br><span class="line">                p = p.next</span><br><span class="line">            if q != None: </span><br><span class="line">                q = q.next</span><br><span class="line">        if carry&gt;0:</span><br><span class="line">            t.next =  ListNode(carry)</span><br><span class="line">        return res.next</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/28/leetcode-Add-Two-Numbers/" data-id="cjw7ahzyp00018cwdz46qking" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/28/leetcode-Add-Two-Numbers/" data-id="cjw7diucf0002qkwd7a5yjpi2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -126,7 +126,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/28/leetcode-twoSum/" data-id="cjw7ahzyr00028cwdxpq3dnd5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/28/leetcode-twoSum/" data-id="cjw7diucd0001qkwdwul18g23" class="article-share-link">Share</a>
       
       
     </footer>
@@ -171,7 +171,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/28/hello-world/" data-id="cjw7ahzyk00008cwd8980t4lc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/28/hello-world/" data-id="cjw7diuc80000qkwdb2g3a71s" class="article-share-link">Share</a>
       
       
     </footer>
